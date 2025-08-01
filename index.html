@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA Signal Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📊 EMA Signal Generator</h1>
+  <div class="controls">
+    <label for="marketSelect">Choose Asset:</label>
+    <select id="marketSelect">
+      <option value="EURUSD">EURUSD</option>
+      <option value="USDJPY">USDJPY</option>
+      <option value="AUDUSD">AUDUSD</option>
+    </select>
+  </div>
+  <table id="signalTable">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Market</th>
+        <th>Asset</th>
+        <th>Timeframe</th>
+        <th>Signal</th>
+        <th>Strategy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="6">Waiting for signal...</td></tr>
+    </tbody>
+  </table>
+  <script src="strategy.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
